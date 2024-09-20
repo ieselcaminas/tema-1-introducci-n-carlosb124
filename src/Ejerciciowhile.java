@@ -1,9 +1,8 @@
 import java.util.Scanner;
 
 public class Ejerciciowhile {
-    import java.util.Scanner;
 
-    public class EjercicioWhile {
+    public static class EjercicioWhile {
         public static void main(String[] args) {
             int num;
             int positives = 0;
@@ -11,7 +10,6 @@ public class Ejerciciowhile {
 
             Scanner sc = new Scanner(System.in);
             System.out.println("Dime 10 números y te diré cuáles son positivos");
-            num = sc.nextInt();
 
 
             for (int contador = 0; contador < 10; contador++) {
