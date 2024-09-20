@@ -1,9 +1,7 @@
 import java.util.Scanner;
 
-public class Ejerciciowhile {
-
-    public static class EjercicioWhile {
-        public static void main(String[] args) {
+public class Ejercicio22 {
+     public static void main(String[] args) {
             int num;
             int positives = 0;
 
@@ -23,4 +21,3 @@ public class Ejerciciowhile {
             System.out.println("Tu numero de positivos es " + positives);
         }
     }
-}
