@@ -14,7 +14,7 @@ public class Ejercicio24 {
         do {
             nota = sc.nextInt();
 
-            if (nota >= -1) {
+            if (nota != -1) {
                 sumatorio += nota;
                 cuantasnotas++;
 
