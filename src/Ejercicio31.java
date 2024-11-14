@@ -2,22 +2,17 @@ import java.util.Scanner;
 
 public class Ejercicio31 {
     public static void main(String[] args) {
-
-        int num;
-        boolean divisor;
+        int x;
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Ingrese un numero");
-        num = sc.nextInt();
+        System.out.println("Ingrese el valor de x: ");
+        x = sc.nextInt();
 
-        for (int i = 1; i <= num; i++) {
-            if (num % i == 0) {
-                System.out.println(i + " es divisor de " + num);
-
+        for (int i = 1; i < x; i++) {
+            if (x % i == 0){
+                System.out.println(x + " es divisible por " + i);
             }
-
         }
     }
-
 }

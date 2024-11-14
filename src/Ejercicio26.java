@@ -1,17 +1,20 @@
 import java.util.Scanner;
 
-    public class Ejercicio26 {
-        public static void main(String[] args) {
-            Scanner scanner = new Scanner(System.in);
+public class Ejercicio26 {
+    public static void main(String[] args) {
 
-            System.out.print("Introduce un número: ");
-            int numero = scanner.nextInt();
+        int num;
+        int resultado = 0;
 
-            System.out.println("Tabla de multiplicar del " + numero + ":");
-            for (int i = 1; i <= 10; i++) {
-                System.out.println(numero + " x " + i + " = " + (numero * i));
-            }
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese un numero: ");
+        num = sc.nextInt();
 
-            scanner.close();
+        for (int i = 1; i <= 10; i++) {
+            resultado = num * i;
+
+            System.out.println(num + " x " + i + " = " + resultado);
         }
+
     }
+}

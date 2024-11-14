@@ -2,34 +2,35 @@ import java.util.Scanner;
 
 public class Ejercicio24 {
     public static void main(String[] args) {
+
         int nota;
-        int sumatorio =0;
-        int cuantasnotas =0;
-        boolean hayundiez = false;
+        int cuantasnotas = 0;
+        float sumanotas = 0;
+
+        boolean haydiez = false;
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Ingrese un numero");
-        sc.nextInt();
 
         do {
             nota = sc.nextInt();
-
-            if (nota != -1) {
-                sumatorio += nota;
-                cuantasnotas++;
-
-
-            }
-            if (10 == nota) {
-                hayundiez = true;
-                System.out.println("Hay un diez en las notas");
+            if (nota != -1){
+                sumanotas += nota;
+                cuantasnotas ++;
+                if(nota == 10){
+                    haydiez = true;
+                }
             }
 
 
         }while (nota != -1);
 
-        System.out.println("La nota media es " + sumatorio/cuantasnotas);
+        System.out.println(sumanotas/cuantasnotas);
 
+        if (haydiez) {
+            System.out.println("Hay un 10 en tus notas.");
+        }else {
+            System.out.println("No hay 10 en tus notas.");
+        }
 
     }
 }
